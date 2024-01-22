@@ -18,10 +18,10 @@ class Sensors {
   float outside_temperature_;
 
  private:
-  const uint8_t kInsideSensorAddress[8] = {0x28, 0xBB, 0x91, 0x57, 0x04, 0xB5, 0x3C, 0xBB};
+  const uint8_t kInsideSensorAddress[8] = {0x28, 0x25, 0x35, 0x81, 0xE3, 0xBA, 0x3C, 0x98};
   const uint8_t kOutsideSensorAddress[8] = {0x28, 0xB2, 0x7B, 0x57, 0x04, 0xC0, 0x3C, 0x03};
 
-  const uint8_t kSensorResolutionBit = 10;   // 10 Bit allowed a much more stable communication
+  const uint8_t kSensorResolutionBit = 12;
 
   OneWire one_wire_;
   DallasTemperature sensors_;

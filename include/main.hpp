@@ -11,7 +11,7 @@
 // version information
 constexpr uint8_t kSoftwareVersionMajor = 0;
 constexpr uint8_t kSoftwareVersionMinor = 1;
-constexpr uint8_t kSoftwareVersionBuild = 1;
+constexpr uint8_t kSoftwareVersionBuild = 2;
 
 #if defined(TARGET_ESP8266)
 
