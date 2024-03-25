@@ -17,9 +17,9 @@ class FanControl {
   inline void SwitchOffFan() { digitalWrite(fan_pin_, LOW); }
 
  private:
-  const uint8_t kSwitchOnOutsideTemperature = 1;
-  const uint8_t kSwitchOffOutsideTemperature = 0;
-  const uint8_t kSwitchOnTemperatureDifference = 3;
+  const int8_t kSwitchOnOutsideTemperature = -1;
+  const int8_t kSwitchOffOutsideTemperature = -2;
+  const uint8_t kSwitchOnTemperatureDifference = 2;
   const uint8_t kSwitchOffTemperatureDifference = 1;
 
   const uint8_t kErrorDelayTime = 30;
